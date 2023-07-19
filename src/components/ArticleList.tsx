@@ -21,27 +21,28 @@ export const ArticleList = ({ articleList, totalItems, currentPage, setPage, loa
   return (
     <div>
       <Skeleton loading={loading} active avatar/>
-      {articleList.length ? (
-        <div>
-          {articleList.map((article: IArticle, index: number) => (
-            <div key={index}>
-              <ArticleItem article={article}/>
-              <hr className='my-0' />
-            </div>
-          ))}
-          {totalPages > 1 && 
-          <Pagination 
-            className="text-center mt-3"
-            showSizeChanger={false}
-            showQuickJumper
-            pageSize={itemsPerPage}
-            current={currentPage}
-            defaultCurrent={1}
-            total={totalItems}
-            onChange={onChange} 
-          />}
-        </div>
-      ) : !loading && <div>No articles here yet...</div>
+      {
+        articleList.length ? (
+          <div>
+            {articleList.map((article: IArticle, index: number) => (
+              <div key={index}>
+                <ArticleItem article={article}/>
+                <hr className='my-0' />
+              </div>
+            ))}
+            {totalPages > 1 && 
+            <Pagination 
+              className="text-center mt-3"
+              showSizeChanger={false}
+              showQuickJumper
+              pageSize={itemsPerPage}
+              current={currentPage}
+              defaultCurrent={1}
+              total={totalItems}
+              onChange={onChange} 
+            />}
+          </div>
+        ) : !loading && <div>No articles here yet...</div>
       }
     </div>
   );
