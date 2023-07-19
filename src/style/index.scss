@@ -1,0 +1,52 @@
+// @import './reset'
+@import './custom/bootstrap/index.scss';
+@import './custom/antd/index.scss';
+
+.tag-selected {
+  text-decoration: underline;
+  opacity: .8;
+}
+
+.tag-items:hover,
+.tag-items:focus {
+  opacity: .6;
+  background-color: #6c757d;
+  color: white !important;
+}
+
+.page-link:hover,
+.page-link:focus {
+  text-decoration: underline;
+  opacity: .8;
+}
+
+.mt-64 {
+  margin-top: 64px;
+}
+
+.h-64 {
+  height: 64px;
+}
+
+.text-shadow{
+  text-shadow: 2px 2px 5px #000;
+}
+
+.z-index-99 {
+  z-index: 99 !important;
+}
+
+.min-w-30 {
+  min-width: 30px;
+}
+
+.toggle-menu {
+  position: absolute;
+  width: 50vw;
+  top: 40px;
+  right: 0;
+}
+
+.text-sm {
+  font-size: 0.75rem;
+}
