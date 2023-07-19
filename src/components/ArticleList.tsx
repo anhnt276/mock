@@ -42,7 +42,7 @@ export const ArticleList = ({ articleList, totalItems, currentPage, setPage, loa
               onChange={onChange} 
             />}
           </div>
-        ) : !loading && <div>No articles here yet...abc</div>
+        ) : !loading && <div>No articles here yet...</div>
       }
     </div>
   );
