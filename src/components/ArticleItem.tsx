@@ -1,6 +1,6 @@
 import { Col, Row } from 'react-bootstrap';
 import { Link, useLocation } from 'react-router-dom';
-import { Context, Dispatch, useContext, useEffect, useState } from 'react';
+import { Dispatch, useContext, useEffect, useState } from 'react';
 import { FavoriteButton } from './buttons/FavoriteButton';
 import { HomeContext, IArticle } from '../pages/Home';
 import { ProfileContext } from '../pages/Profile';
